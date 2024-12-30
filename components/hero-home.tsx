@@ -22,7 +22,8 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Dewa Kreatif hadir #MembentukMasaDepanDigitalBersamaAnda <br />
+                Dewa Kreatif hadir untuk #MembentukMasaDepanDigitalBersamaAnda{" "}
+                <br />
                 Tunjukkan eksistensi, kelola secara efisien, mudahkan layanan.
               </p>
               <div className="relative before:absolute before:inset-0 before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
@@ -33,7 +34,7 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
+                    href="https://wa.me/6281938960028"
                   >
                     <span className="relative inline-flex items-center">
                       Konsultasi Sekarang{" "}
