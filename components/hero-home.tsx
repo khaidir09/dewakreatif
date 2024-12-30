@@ -1,11 +1,4 @@
-import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
 
 export default function HeroHome() {
   return (
@@ -29,8 +22,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Dewa Kreatif hadir untuk #MembentukMasaDepanDigitalBersamaAnda{" "}
-                <br />
+                Dewa Kreatif hadir #MembentukMasaDepanDigitalBersamaAnda <br />
                 Tunjukkan eksistensi, kelola secara efisien, mudahkan layanan.
               </p>
               <div className="relative before:absolute before:inset-0 before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
@@ -75,7 +67,7 @@ export default function HeroHome() {
               {/* Icons/Visuals */}
               <div className="mb-8 flex justify-center space-x-4">
                 {/* Graphic Design Icon */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +95,7 @@ export default function HeroHome() {
                 </div>
 
                 {/* Website Icon */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-r from-red-500 to-red-700 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +127,7 @@ export default function HeroHome() {
                 </div>
 
                 {/* Application Icon */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
