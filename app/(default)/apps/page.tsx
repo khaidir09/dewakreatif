@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Apps - Simple",
+  title: "Jasa Pembuatan Desain Grafis, Web dan Aplikasi Kostum - Dewa Kreatif",
   description: "Page description",
 };
 
