@@ -100,29 +100,11 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/service"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Layanan Desain Grafis
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Layanan Website
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Layanan Aplikasi
+                Layanan
               </Link>
             </li>
             <li>
