@@ -5,6 +5,7 @@ import TestimonialImg03 from "@/public/images/portofolio3.jpg";
 import TestimonialImg04 from "@/public/images/portofolio4.jpg";
 import TestimonialImg05 from "@/public/images/portofolio5.jpg";
 import TestimonialImg06 from "@/public/images/portofolio6.jpg";
+import TestimonialImg07 from "@/public/images/portofolio7.jpg";
 
 export default function TestimonialsCarousel() {
   const testimonials = [
@@ -19,6 +20,12 @@ export default function TestimonialsCarousel() {
       name: "Website PPDB Sekolah",
       username: "SMK Negeri 1 Amuntai",
       link: "https://ppdb.smkn1amuntai.sch.id/",
+    },
+    {
+      img: TestimonialImg07,
+      name: "Website Company Profile",
+      username: "KONI Kabupaten HSU",
+      link: "https://koni-hsu.org/",
     },
     {
       img: TestimonialImg04,
