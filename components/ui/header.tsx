@@ -25,34 +25,14 @@ export default function Header() {
                   Beranda
                 </Link>
               </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Layanan">
-                {/* 2nd level: hover */}
-                <li>
-                  <Link
-                    href="#"
-                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Desain Grafis
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Website
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Aplikasi
-                  </Link>
-                </li>
-              </Dropdown>
+              <li className="px-3 py-1">
+                <Link
+                  href="/service"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                >
+                  Layanan
+                </Link>
+              </li>
               <li className="px-3 py-1">
                 <Link
                   href="/about"

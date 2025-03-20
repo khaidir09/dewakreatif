@@ -13,9 +13,9 @@ export default function Apps() {
       <Hero />
       <AppList />
       <Cta
-        heading="Create your next project with Simple"
-        buttonText="Start Free Trial"
-        buttonLink="#0"
+        heading="Kembangkan bisnis Anda bersama Dewa Kreatif"
+        buttonText="Konsultasi Sekarang"
+        buttonLink="https://wa.me/6281938960028"
       />
     </>
   );

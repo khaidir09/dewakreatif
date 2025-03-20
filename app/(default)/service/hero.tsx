@@ -9,13 +9,13 @@ export default function Hero() {
         <div className="mx-auto max-w-3xl pb-10 pt-32 md:pt-40">
           {/* Section header */}
           <div className="text-center">
-            <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl">
-              Apps &amp; Extensions
+            <h1 className="mb-6 text-5xl font-bold md:text-6xl">
+              Layanan Kami
             </h1>
             <div className="mx-auto max-w-3xl">
               <p className="text-lg text-gray-700">
-                Enhance your projects with our professionally-built app
-                extensions.
+                Pilih solusi yang tepat untuk Anda dan lihat bisnis semakin maju
+                dengan digitalisasi.
               </p>
             </div>
           </div>
