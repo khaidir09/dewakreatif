@@ -118,11 +118,11 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/portofolio"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Kontak
+                Portofolio
               </Link>
             </li>
           </ul>

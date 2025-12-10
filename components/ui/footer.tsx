@@ -3,7 +3,6 @@ import Logo from "./logo";
 import Image from "next/image";
 import Whatsapp from "@/public/images/Whatsaapp.svg";
 import Instagram from "@/public/images/Instagram.svg";
-import Facebook from "@/public/images/Facebook.svg";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (

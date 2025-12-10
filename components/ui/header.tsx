@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Logo from "./logo";
-import Dropdown from "@/components/dropdown";
 import MobileMenu from "./mobile-menu";
 
 export default function Header() {
@@ -43,10 +42,10 @@ export default function Header() {
               </li>
               <li className="px-3 py-1">
                 <Link
-                  href="#"
+                  href="/portofolio"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Kontak
+                  Portofolio
                 </Link>
               </li>
             </ul>

@@ -129,10 +129,10 @@ export default function AppList() {
             {/* Section #2 */}
             <section>
               <div className="mb-5">
-                <h2 className="truncate text-xl font-bold">Desain Grafis</h2>
+                <h2 className="truncate text-xl font-bold">Aplikasi</h2>
               </div>
               <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
-                {apps02.map((app, index) => (
+                {apps03.map((app, index) => (
                   <div key={index} className="group">
                     <AppCard app={app}>{app.description}</AppCard>
                   </div>
@@ -143,10 +143,10 @@ export default function AppList() {
             {/* Section #3 */}
             <section>
               <div className="mb-5">
-                <h2 className="truncate text-xl font-bold">Aplikasi</h2>
+                <h2 className="truncate text-xl font-bold">Desain Grafis</h2>
               </div>
               <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
-                {apps03.map((app, index) => (
+                {apps02.map((app, index) => (
                   <div key={index} className="group">
                     <AppCard app={app}>{app.description}</AppCard>
                   </div>
