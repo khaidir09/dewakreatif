@@ -1,52 +1,52 @@
 import Testimonial from "@/components/testimonial";
-import TestimonialImg01 from "@/public/images/portofolio1.jpg";
-import TestimonialImg02 from "@/public/images/portofolio2.jpg";
-import TestimonialImg03 from "@/public/images/portofolio3.jpg";
-import TestimonialImg04 from "@/public/images/portofolio4.jpg";
-import TestimonialImg05 from "@/public/images/portofolio5.jpg";
-import TestimonialImg06 from "@/public/images/portofolio6.jpg";
-import TestimonialImg07 from "@/public/images/portofolio7.jpg";
+import Desain01 from "@/public/images/portofolio1.jpg";
+import App01 from "@/public/images/app-01.jpg";
+import Web02 from "@/public/images/web-02.jpg";
+import Web03 from "@/public/images/web-03.jpg";
+import Web04 from "@/public/images/web-04.jpg";
+import Web06 from "@/public/images/web-06.jpg";
+import Web07 from "@/public/images/web-07.jpg";
 
 export default function TestimonialsCarousel() {
   const testimonials = [
     {
-      img: TestimonialImg06,
+      img: Web07,
+      name: "Website Manajemen Tailor Shop",
+      username: "Mustami Rezki Tailor Shop",
+      link: "https://mustamirezki.biz.id/",
+    },
+    {
+      img: Web06,
+      name: "Website Pemerintahan",
+      username: "Setda Kabupaten HSU",
+      link: "https://sepeda-hsu.com/",
+    },
+    {
+      img: Web04,
       name: "Website Portal Berita",
       username: "Tirai Kota",
       link: "https://tiraikota.com/",
     },
     {
-      img: TestimonialImg05,
-      name: "Website PPDB Sekolah",
+      img: Web03,
+      name: "Website SPMB Sekolah",
       username: "SMK Negeri 1 Amuntai",
       link: "https://ppdb.smkn1amuntai.sch.id/",
     },
     {
-      img: TestimonialImg07,
-      name: "Website Company Profile",
-      username: "KONI Kabupaten HSU",
-      link: "https://koni-hsu.org/",
-    },
-    {
-      img: TestimonialImg04,
+      img: Web02,
       name: "Website Manajamen Toko Servis",
       username: "CV. Maju Jaya Bahagia",
       link: "https://saraba-bisa.com/",
     },
     {
-      img: TestimonialImg03,
+      img: App01,
       name: "Aplikasi Android",
       username: "KEMENAG HSU",
       link: "#",
     },
     {
-      img: TestimonialImg02,
-      name: "Website Sekolah",
-      username: "SMK Negeri 1 Amuntai",
-      link: "https://smkn1amuntai.sch.id/",
-    },
-    {
-      img: TestimonialImg01,
+      img: Desain01,
       name: "Brosur PPDB",
       username: "SMK Negeri 1 Amuntai",
       link: "https://www.instagram.com/p/CaRnHk9PxIP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
