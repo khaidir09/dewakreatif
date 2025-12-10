@@ -4,54 +4,66 @@ import { useRef, useState, Fragment } from "react";
 import Image from "next/image";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { Transition } from "@headlessui/react";
-import Portofolio01 from "@/public/images/portofolio1.jpg";
-import Portofolio02 from "@/public/images/portofolio2.jpg";
-import Portofolio03 from "@/public/images/portofolio3.jpg";
-import Portofolio04 from "@/public/images/portofolio4.jpg";
-import Portofolio05 from "@/public/images/portofolio5.jpg";
-import Portofolio06 from "@/public/images/portofolio6.jpg";
-import Portofolio07 from "@/public/images/portofolio7.jpg";
+import Web01 from "@/public/images/web-01.jpg";
+import Web02 from "@/public/images/web-02.jpg";
+import Web03 from "@/public/images/web-03.jpg";
+import Web04 from "@/public/images/web-04.jpg";
+import Web05 from "@/public/images/web-05.jpg";
+import Web06 from "@/public/images/web-06.jpg";
+import Web07 from "@/public/images/web-07.jpg";
+import App01 from "@/public/images/app-01.jpg";
+import Desain01 from "@/public/images/portofolio1.jpg";
 
 const portfolioItems = {
   0: [
     {
-      image: Portofolio01,
-      category: "Portal Berita",
+      image: Web01,
+      category: "Website Sekolah",
+      client: "SMK Negeri 1 Amuntai",
+    },
+    {
+      image: Web02,
+      category: "Website Manajemen Toko Servis",
+      client: "CV Maju Jaya Bahagia (SarabaBisa)",
+    },
+    {
+      image: Web03,
+      category: "Website SPMB Sekolah",
+      client: "SMK Negeri 1 Amuntai",
+    },
+    {
+      image: Web04,
+      category: "Portal Berita Online",
       client: "Tirai Kota",
     },
     {
-      image: Portofolio02,
-      category: "E-Commerce",
-      client: "Toko Maju Jaya",
+      image: Web05,
+      category: "Website Profil Lembaga",
+      client: "KONI HSU",
     },
     {
-      image: Portofolio03,
-      category: "Company Profile",
-      client: "PT. Sinar Mas",
+      image: Web06,
+      category: "Website Pemerintahan",
+      client: "Setda Kabupaten HSU",
+    },
+    {
+      image: Web07,
+      category: "Website Manajemen Tailor Shop",
+      client: "Mustami Rezki Tailor Shop",
     },
   ],
   1: [
     {
-      image: Portofolio04,
-      category: "Ojek Online",
-      client: "GoCepat",
-    },
-    {
-      image: Portofolio05,
-      category: "Fintech",
-      client: "DompetKu",
+      image: App01,
+      category: "Sistem Informasi Terpadu",
+      client: "KEMENAG HSU",
     },
   ],
   2: [
     {
-      image: Portofolio06,
-      category: "Logo Design",
-      client: "Cafe Bunga",
-    },
-    {
-      image: Portofolio07,
-      category: "Social Media Kit",
-      client: "Brand Baru",
+      image: Desain01,
+      category: "Brosur",
+      client: "SMK Negeri 1 Amuntai",
     },
   ],
 };
@@ -147,26 +159,26 @@ export default function PortofolioCategories() {
                       appear={true}
                     >
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {portfolioItems[tabIndex as keyof typeof portfolioItems].map(
-                          (item, index) => (
-                            <article
-                              key={index}
-                              className={`relative flex justify-center flex-col rounded-2xl bg-white/70 p-8 shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] md:odd:-rotate-1 md:even:rotate-1`}
-                            >
-                              <Image
-                                className="mx-auto mb-3"
-                                src={item.image}
-                                alt={item.client}
-                              />
-                              <div className="text-center">
-                                <div className="font-bold">{item.category}</div>
-                                <div className="text-sm font-medium text-gray-500/80 transition hover:text-gray-500">
-                                  {item.client}
-                                </div>
+                        {portfolioItems[
+                          tabIndex as keyof typeof portfolioItems
+                        ].map((item, index) => (
+                          <article
+                            key={index}
+                            className={`relative flex justify-center flex-col rounded-2xl bg-white/70 p-8 shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] md:odd:-rotate-1 md:even:rotate-1`}
+                          >
+                            <Image
+                              className="mx-auto mb-3 rounded-xl border border-gray-200 shadow-sm"
+                              src={item.image}
+                              alt={item.client}
+                            />
+                            <div className="text-center">
+                              <div className="font-bold">{item.category}</div>
+                              <div className="text-sm font-medium text-gray-500/80 transition hover:text-gray-500">
+                                {item.client}
                               </div>
-                            </article>
-                          )
-                        )}
+                            </div>
+                          </article>
+                        ))}
                       </div>
                     </Transition>
                   </TabPanel>

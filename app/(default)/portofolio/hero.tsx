@@ -6,9 +6,9 @@ export default function Hero() {
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Main content */}
-        <div className="mx-auto max-w-3xl pb-12 pt-32 md:pb-20 md:pt-40">
+        <div className="mx-auto max-w-3xl pt-32 md:pt-40">
           {/* Section header */}
-          <div className="pb-10 text-center">
+          <div className="text-center">
             <h1 className="mb-6 text-center text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl">
               Portofolio Kami
             </h1>

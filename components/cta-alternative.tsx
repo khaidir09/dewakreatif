@@ -20,7 +20,7 @@ export default function CtaAlternative({
         <div className="h-80 w-80 rounded-full bg-gradient-to-tr from-blue-500 to-gray-900 opacity-40 blur-[160px] will-change-[filter]"></div>
       </div>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="border-t text-center [border-image:linear-gradient(to_right,transparent,theme(colors.blue.500/.25),transparent)1]">
+        <div className="text-center [border-image:linear-gradient(to_right,transparent,theme(colors.blue.500/.25),transparent)1]">
           <div className="py-12 md:py-20">
             <h2 className="mb-6 text-3xl font-bold md:mb-12 md:text-4xl">
               {heading}
