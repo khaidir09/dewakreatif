@@ -149,27 +149,22 @@ export default function PortofolioCategories() {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {portfolioItems[tabIndex as keyof typeof portfolioItems].map(
                           (item, index) => (
-                            <div
+                            <article
                               key={index}
-                              className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                              className={`relative flex justify-center flex-col rounded-2xl bg-white/70 p-8 shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] md:odd:-rotate-1 md:even:rotate-1`}
                             >
-                              <div className="relative h-48 w-full">
-                                <Image
-                                  src={item.image}
-                                  alt={item.client}
-                                  fill
-                                  className="object-cover"
-                                />
-                              </div>
-                              <div className="p-5">
-                                <h3 className="text-sm font-semibold text-blue-600 mb-1">
-                                  {item.category}
-                                </h3>
-                                <p className="text-lg font-bold text-gray-800">
+                              <Image
+                                className="mx-auto mb-3"
+                                src={item.image}
+                                alt={item.client}
+                              />
+                              <div className="text-center">
+                                <div className="font-bold">{item.category}</div>
+                                <div className="text-sm font-medium text-gray-500/80 transition hover:text-gray-500">
                                   {item.client}
-                                </p>
+                                </div>
                               </div>
-                            </div>
+                            </article>
                           )
                         )}
                       </div>
