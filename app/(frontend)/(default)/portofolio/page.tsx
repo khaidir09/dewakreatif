@@ -7,12 +7,15 @@ export const metadata = {
 import PortofolioCategories from "@/components/portofolio-categories";
 import Hero from "./hero";
 import Cta from "@/components/cta-alternative";
+import { getPortfolio } from "@/lib/content";
 
-export default function Portofolios() {
+export default async function Portofolios() {
+  const items = await getPortfolio();
+
   return (
     <>
       <Hero />
-      <PortofolioCategories />
+      <PortofolioCategories items={items} />
       <Cta
         heading="Mulai Proyek Anda Bersama Dewa Kreatif"
         buttonText="Konsultasi Gratis"
