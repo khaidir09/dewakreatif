@@ -1,4 +1,7 @@
-const withMDX = require("@next/mdx")();
+import createMDX from "@next/mdx";
+import { withPayload } from "@payloadcms/next/withPayload";
+
+const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,4 +10,4 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
 };
 
-module.exports = withMDX(nextConfig);
+export default withPayload(withMDX(nextConfig), { devBundleServerPackages: false });

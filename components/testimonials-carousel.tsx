@@ -1,57 +1,8 @@
 import Testimonial from "@/components/testimonial";
-import Desain01 from "@/public/images/portofolio1.jpg";
-import App01 from "@/public/images/app-01.jpg";
-import Web02 from "@/public/images/web-02.jpg";
-import Web03 from "@/public/images/web-03.jpg";
-import Web04 from "@/public/images/web-04.jpg";
-import Web06 from "@/public/images/web-06.jpg";
-import Web07 from "@/public/images/web-07.jpg";
+import { getPortfolio } from "@/lib/content";
 
-export default function TestimonialsCarousel() {
-  const testimonials = [
-    {
-      img: Web07,
-      name: "Website Manajemen Tailor Shop",
-      username: "Mustami Rezki Tailor Shop",
-      link: "https://mustamirezki.biz.id/",
-    },
-    {
-      img: Web06,
-      name: "Website Pemerintahan",
-      username: "Setda Kabupaten HSU",
-      link: "https://sepeda-hsu.com/",
-    },
-    {
-      img: Web04,
-      name: "Website Portal Berita",
-      username: "Tirai Kota",
-      link: "https://tiraikota.com/",
-    },
-    {
-      img: Web03,
-      name: "Website SPMB Sekolah",
-      username: "SMK Negeri 1 Amuntai",
-      link: "https://ppdb.smkn1amuntai.sch.id/",
-    },
-    {
-      img: Web02,
-      name: "Website Manajamen Toko Servis",
-      username: "CV. Maju Jaya Bahagia",
-      link: "https://saraba-bisa.com/",
-    },
-    {
-      img: App01,
-      name: "Aplikasi Android",
-      username: "KEMENAG HSU",
-      link: "#",
-    },
-    {
-      img: Desain01,
-      name: "Brosur PPDB",
-      username: "SMK Negeri 1 Amuntai",
-      link: "https://www.instagram.com/p/CaRnHk9PxIP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    },
-  ];
+export default async function TestimonialsCarousel() {
+  const testimonials = await getPortfolio({ homeOnly: true });
 
   return (
     <section className="relative before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:h-[120%] before:bg-gradient-to-b before:from-gray-100">
@@ -78,9 +29,9 @@ export default function TestimonialsCarousel() {
           <div className="group inline-flex w-full flex-nowrap py-12 [mask-image:_linear-gradient(to_right,transparent_0,_black_10%,_black_90%,transparent_100%)] md:py-20">
             <div className="flex animate-[infinite-scroll_60s_linear_infinite] justify-center group-hover:[animation-play-state:paused] [&>*]:mx-3">
               {/* Items */}
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <Testimonial
-                  key={index}
+                  key={testimonial.id}
                   testimonial={testimonial}
                   className="w-[22rem] transition-transform duration-300 group-hover:rotate-0"
                 ></Testimonial>
@@ -92,9 +43,9 @@ export default function TestimonialsCarousel() {
               aria-hidden="true"
             >
               {/* Items */}
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <Testimonial
-                  key={index}
+                  key={testimonial.id}
                   testimonial={testimonial}
                   className="w-[22rem] transition-transform duration-300 group-hover:rotate-0"
                 ></Testimonial>
